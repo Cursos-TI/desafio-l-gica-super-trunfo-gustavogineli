@@ -1,74 +1,79 @@
 # ⚠️ Importante!!!
-Você pode escolher qualquer um dos desafios para desenvolver. Sinta-se à vontade para começar pelo desafio que mais lhe interessa.
+# Comparação de Atributos de Cidades
 
-# Desafio Super Trunfo - Países - Comparação das Cartas
+Este programa permite a comparação entre duas cidades com base em atributos como população, área, PIB, pontos turísticos e densidade demográfica.
 
-Bem-vindo ao desafio "Super Trunfo - Países"! Neste projeto, você desenvolverá um sistema para comparar cartas baseadas em atributos de cidades. O desafio é dividido em três níveis: Novato, Aventureiro e Mestre. Cada nível adiciona novas funcionalidades e complexidades, permitindo um aprendizado progressivo.
+## Instruções de Execução
 
-## 🏅 Nível Novato
+### Como compilar o código:
+Para compilar o código, você pode usar o GCC (GNU Compiler Collection), disponível em ferramentas como **MinGW** ou **Cygwin**. Certifique-se de que o `gcc` esteja instalado no seu sistema.
 
-No nível Novato, você começará implementando a lógica básica de comparação entre cartas utilizando estruturas de decisão `if` e `if-else`.
+1. Abra o terminal (Prompt de Comando ou PowerShell).
+2. Navegue até o diretório onde o arquivo `comparacao_cidades.c` está localizado.
+3. Compile o código com o seguinte comando:
+   ```bash
+   gcc -o comparacao_cidades comparacao_cidades.c
+Como executar o programa:
+Para executar o programa compilado, use o seguinte comando no terminal:
+./comparacao_cidades
 
-### 🚩 Objetivos:
-- **Cadastro de Cartas:** O sistema permitirá ao usuário cadastrar cartas de cidades, incluindo informações como estado, código da carta, nome da cidade, população, área, PIB e número de pontos turísticos.
-- **Comparação de Cartas:** O sistema comparará os atributos de duas cartas e determinará a vencedora com base em uma propriedade específica (população, área, PIB, etc.), escolhida no código.
-- **Exibição de Resultados:** Após a comparação, o sistema exibirá qual carta venceu com base na regra: maior valor vence, exceto em densidade populacional, onde o menor valor é o vencedor.
+## Exemplo de Uso:
+O programa solicitará os dados de duas cidades (nome, população, área, PIB, pontos turísticos e densidade demográfica).
+Depois, você poderá selecionar dois atributos para comparar entre as cidades.
+Menus:
+Primeiro atributo para comparar:
 
-### 📥 Entrada de Dados:
-- Os dados das cartas serão inseridos manualmente via terminal.
-- O sistema solicitará interativamente as informações de cada carta.
+1 - População
+2 - Área
+3 - PIB
+4 - Pontos turísticos
+5 - Densidade demográfica
+Segundo atributo para comparar:
 
-### 📤 Saída de Dados:
-- Após o cadastro, as propriedades da cidade serão exibidas de forma organizada.
-- O resultado da comparação será mostrado, indicando a carta vencedora.
+1 - População
+2 - Área
+3 - PIB
+4 - Pontos turísticos
+5 - Densidade demográfica
 
----
+## Regras de Comparação:
+O maior valor do atributo vence, exceto para Densidade Demográfica, onde o menor valor vence.
+Após comparar os dois atributos, o programa soma os valores e declara o vencedor final.
 
-## 🏅 Nível Aventureiro
 
-No nível Aventureiro, você expandirá o sistema para incluir a comparação aninhada e a criação de um menu interativo usando `switch`.
+## Exemplo de Execução
 
-### 🆕 Diferença em relação ao Nível Novato:
-- **Menu Interativo:** O usuário poderá escolher diferentes atributos para comparação através de um menu.
-- **Comparação Aninhada:** Implementação de lógica de comparação mais complexa, utilizando estruturas aninhadas para tomar decisões baseadas em múltiplos atributos.
+Digite o nome da cidade 1: Cidade A
+Digite a população da cidade 1: 5000000
+Digite a área da cidade 1 (em km²): 10000
+Digite o PIB da cidade 1 (em bilhões): 200
+Digite o número de pontos turísticos da cidade 1: 50
 
-### 🚩 Novas Funcionalidades:
-- **Cadastro de Cartas:** Similar ao nível Novato, com a adição de comparação de múltiplos atributos.
-- **Menu Interativo:** Uso de `switch` para criar um menu que permite ao jogador escolher os atributos a serem comparados.
-- **Exibição de Resultados:** O sistema exibirá o resultado da comparação, indicando qual carta venceu e qual atributo foi utilizado.
+Digite o nome da cidade 2: Cidade B
+Digite a população da cidade 2: 3000000
+Digite a área da cidade 2 (em km²): 12000
+Digite o PIB da cidade 2 (em bilhões): 150
+Digite o número de pontos turísticos da cidade 2: 60
 
----
+Escolha o primeiro atributo para comparar:
+1 - População
+2 - Área
+3 - PIB
+4 - Pontos turísticos
+5 - Densidade demográfica
+Escolha uma opção: 1
 
-## 🏅 Nível Mestre
+Escolha o segundo atributo para comparar (não pode ser o mesmo que o primeiro):
+1 - População
+2 - Área
+3 - PIB
+4 - Pontos turísticos
+5 - Densidade demográfica
+Escolha uma opção: 4
 
-No nível Mestre, o desafio se intensifica com a adição de funcionalidades avançadas, como menus dinâmicos e lógica de decisão complexa com operadores ternários.
+Comparando os atributos escolhidos:
+Cidade A vence no primeiro atributo.
 
-### 🆕 Diferença em relação ao Nível Aventureiro:
-- **Escolha de Dois Atributos:** O usuário poderá escolher dois atributos para comparação entre as cartas.
-- **Lógica de Decisão Complexa:** Implementação de estruturas de decisão aninhadas e encadeadas, além do uso de operadores ternários para determinar a carta vencedora.
-- **Menus Dinâmicos:** Os menus serão dinâmicos, permitindo uma navegação fluida entre as opções de comparação.
 
-### 🚩 Novas Funcionalidades:
-- **Comparação de Dois Atributos:** O sistema comparará dois atributos simultaneamente para determinar a carta vencedora.
-- **Lógica Avançada:** Uso de operadores ternários e lógica aninhada para lidar com comparações complexas.
-- **Empates:** O sistema será capaz de lidar com empates, exibindo mensagens apropriadas.
-- **Exibição de Resultados:** Exibição dos resultados das comparações de forma clara e interativa.
 
----
 
-## 📋 Requisitos Funcionais Comuns
-- **Cadastro de Cartas:** O sistema deve permitir o cadastro de cartas com as informações necessárias.
-- **Comparação:** O sistema deve comparar as cartas e determinar a vencedora com base nas regras estabelecidas.
-- **Exibição de Resultados:** Os resultados devem ser exibidos de forma clara, indicando a carta vencedora.
-
-## 📌 Requisitos Não Funcionais Comuns
-- **Usabilidade:** A interface do usuário deve ser simples e intuitiva.
-- **Performance:** O sistema deve executar operações sem atrasos perceptíveis.
-- **Manutenibilidade:** O código deve ser bem estruturado e documentado.
-- **Confiabilidade:** O sistema deve ser robusto e capaz de lidar com entradas inválidas de forma adequada.
-
----
-
-Boa sorte no desenvolvimento deste desafio e aproveite para aprender e se divertir enquanto progride pelos níveis!
-
-Equipe de Ensino - MateCheck
