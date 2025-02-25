@@ -20,7 +20,9 @@ Para executar o programa compilado, use o seguinte comando no terminal:
 ## Exemplo de Uso:
 O programa solicitará os dados de duas cidades (nome, população, área, PIB, pontos turísticos e densidade demográfica).
 Depois, você poderá selecionar dois atributos para comparar entre as cidades.
+
 Menus:
+
 Primeiro atributo para comparar:
 
 1 - População
