@@ -14,29 +14,31 @@ Para compilar o código, você pode usar o GCC (GNU Compiler Collection), dispon
    ```bash
    gcc -o comparacao_cidades comparacao_cidades.c
 Como executar o programa:
-Para executar o programa compilado, use o seguinte comando no terminal:
+Para executar o programa compilado, use o seguinte comando no terminal: <br>
+
+
 ./comparacao_cidades
 
 ## Exemplo de Uso:
 O programa solicitará os dados de duas cidades (nome, população, área, PIB, pontos turísticos e densidade demográfica).
-Depois, você poderá selecionar dois atributos para comparar entre as cidades.
+Depois, você poderá selecionar dois atributos para comparar entre as cidades. <br>
 
-Menus:
+Menus: <br>
 
 Primeiro atributo para comparar:
 
-1 - População
-2 - Área
-3 - PIB
-4 - Pontos turísticos
-5 - Densidade demográfica
+1 - População <br>
+2 - Área <br>
+3 - PIB <br>
+4 - Pontos turísticos <br>
+5 - Densidade demográfica <br>
 Segundo atributo para comparar:
 
-1 - População
-2 - Área
-3 - PIB
-4 - Pontos turísticos
-5 - Densidade demográfica
+1 - População <br>
+2 - Área <br>
+3 - PIB <br>
+4 - Pontos turísticos <br>
+5 - Densidade demográfica <br>
 
 ## Regras de Comparação:
 O maior valor do atributo vence, exceto para Densidade Demográfica, onde o menor valor vence.
@@ -45,35 +47,35 @@ Após comparar os dois atributos, o programa soma os valores e declara o vencedo
 
 ## Exemplo de Execução
 
-Digite o nome da cidade 1: Cidade A
-Digite a população da cidade 1: 5000000
-Digite a área da cidade 1 (em km²): 10000
-Digite o PIB da cidade 1 (em bilhões): 200
-Digite o número de pontos turísticos da cidade 1: 50
+Digite o nome da cidade 1: Cidade A <br>
+Digite a população da cidade 1: 5000000 <br>
+Digite a área da cidade 1 (em km²): 10000 <br>
+Digite o PIB da cidade 1 (em bilhões): 200 <br>
+Digite o número de pontos turísticos da cidade 1: 50 <br>
 
-Digite o nome da cidade 2: Cidade B
-Digite a população da cidade 2: 3000000
-Digite a área da cidade 2 (em km²): 12000
-Digite o PIB da cidade 2 (em bilhões): 150
-Digite o número de pontos turísticos da cidade 2: 60
+Digite o nome da cidade 2: Cidade B <br>
+Digite a população da cidade 2: 3000000 <br>
+Digite a área da cidade 2 (em km²): 12000 <br>
+Digite o PIB da cidade 2 (em bilhões): 150 <br>
+Digite o número de pontos turísticos da cidade 2: 60 <br>
 
 Escolha o primeiro atributo para comparar:
-1 - População
-2 - Área
-3 - PIB
-4 - Pontos turísticos
-5 - Densidade demográfica
-Escolha uma opção: 1
+1 - População <br>
+2 - Área <br>
+3 - PIB <br>
+4 - Pontos turísticos <br>
+5 - Densidade demográfica <br>
+Escolha uma opção: 1 <br>
 
 Escolha o segundo atributo para comparar (não pode ser o mesmo que o primeiro):
-1 - População
-2 - Área
-3 - PIB
-4 - Pontos turísticos
-5 - Densidade demográfica
-Escolha uma opção: 4
+1 - População <br>
+2 - Área <br>
+3 - PIB <br>
+4 - Pontos turísticos <br>
+5 - Densidade demográfica <br>
+Escolha uma opção: 4 <br>
 
-Comparando os atributos escolhidos:
+Comparando os atributos escolhidos:<br>
 Cidade A vence no primeiro atributo.
 
 
